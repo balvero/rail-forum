@@ -3,6 +3,7 @@
     <% @messages.each do |message| %>
         <div class="message">
           <h2 class="message-title"><%= message.title %></h2>
+          <div class="meta">by: <%= message.user.email %></div>
           <%= link_to "Join", message, class: 'btn btn-info' %>
         </div>
 
