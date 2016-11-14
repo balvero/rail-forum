@@ -8,6 +8,13 @@
           </div>
         </div>
 
+    <hr />
+    <h3>Comments:</h3>
+    <%= render @message.comments %>
+
+    <h4>Join Discussion:</h4>
+    <%= render 'comments/form' %>
+
       <div class="links btn-group">
         <%= link_to 'Back', root_path, class: 'btn btn-default' %>
         <%= link_to 'Edit', edit_message_path , class: 'btn btn-primary' %>

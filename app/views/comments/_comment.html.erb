@@ -1,0 +1,8 @@
+<div class="comment">
+  <div class="comment-content">
+    <%= comment.content %>
+  </div>
+  <div class="comment-author">
+    by: <%= comment.user.email %> <%= time_ago_in_words(comment.created_at) %>
+  </div>
+</div>
